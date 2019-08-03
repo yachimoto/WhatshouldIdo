@@ -16,5 +16,14 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func didclickbottom(_ sender: UIButton) {
+    
+        // performSegueは画面遷移のための関数
+        performSegue(withIdentifier: "countDown", sender: nil)
+
+        
+    }
+    
+    
 }
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		CE53C25D22F3E04900090815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE53C25B22F3E04900090815 /* Main.storyboard */; };
 		CE53C25F22F3E04E00090815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE53C25E22F3E04E00090815 /* Assets.xcassets */; };
 		CE53C26222F3E04E00090815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE53C26022F3E04E00090815 /* LaunchScreen.storyboard */; };
+		CEFCCC7722F58C34005A96C9 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCCC7622F58C34005A96C9 /* CountDownViewController.swift */; };
+		CEFCCC7922F595DB005A96C9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCCC7822F595DB005A96C9 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CE53C25E22F3E04E00090815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE53C26122F3E04E00090815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE53C26322F3E04E00090815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFCCC7622F58C34005A96C9 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
+		CEFCCC7822F595DB005A96C9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				CE53C25E22F3E04E00090815 /* Assets.xcassets */,
 				CE53C26022F3E04E00090815 /* LaunchScreen.storyboard */,
 				CE53C26322F3E04E00090815 /* Info.plist */,
+				CEFCCC7622F58C34005A96C9 /* CountDownViewController.swift */,
+				CEFCCC7822F595DB005A96C9 /* ResultViewController.swift */,
 			);
 			path = whatshouldIdo;
 			sourceTree = "<group>";
@@ -85,7 +91,6 @@
 				171173610AAE39F11BCCF0AC /* Pods-whatshouldIdo.debug.xcconfig */,
 				99CC86E78649790A54F8420E /* Pods-whatshouldIdo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -204,8 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFCCC7722F58C34005A96C9 /* CountDownViewController.swift in Sources */,
 				CE53C25A22F3E04900090815 /* ViewController.swift in Sources */,
 				CE53C25822F3E04900090815 /* AppDelegate.swift in Sources */,
+				CEFCCC7922F595DB005A96C9 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
