@@ -1,0 +1,6 @@
+framework module Pods_whatshouldIdo {
+  umbrella header "Pods-whatshouldIdo-umbrella.h"
+
+  export *
+  module * { export * }
+}
