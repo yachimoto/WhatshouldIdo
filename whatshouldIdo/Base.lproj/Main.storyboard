@@ -113,6 +113,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="textField" destination="pmj-KH-MpF" id="RFC-oo-na5"/>
                         <segue destination="vLl-9v-Nl8" kind="show" identifier="countDown" id="LEd-g8-wBS"/>
                     </connections>
                 </viewController>
@@ -135,18 +136,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jak-cH-LYx">
+                                <rect key="frame" x="8" y="679" width="406" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Dac-Kf-dDk"/>
                     </view>
                     <connections>
                         <outlet property="countDownLabel" destination="3hr-S0-AG6" id="XDr-ph-nqU"/>
+                        <outlet property="label" destination="jak-cH-LYx" id="bwK-uC-OAy"/>
                         <segue destination="Bnj-ri-o7f" kind="show" identifier="toResult" id="jqf-uB-v7B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lV1-b0-omQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2088" y="-472"/>
+            <point key="canvasLocation" x="2086.9565217391305" y="-472.09821428571428"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Hdw-nk-qOD">
@@ -157,9 +166,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FM-XN-v8z">
-                                <rect key="frame" x="60" y="449" width="295" height="168"/>
+                                <rect key="frame" x="20" y="352" width="374" height="223"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="81"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="1" green="0.1373028942" blue="0.10390552290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZA-Yd-OiH">
+                                <rect key="frame" x="20" y="233" width="374" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -169,11 +185,12 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="3FM-XN-v8z" id="kaq-GO-aTu"/>
+                        <outlet property="label2" destination="eZA-Yd-OiH" id="kk5-m2-siu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bp-NV-61Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2939" y="117"/>
+            <point key="canvasLocation" x="2940.579710144928" y="114.50892857142857"/>
         </scene>
     </scenes>
 </document>

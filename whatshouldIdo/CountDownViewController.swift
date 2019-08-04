@@ -10,15 +10,15 @@ import UIKit
 
 class CountDownViewController: UIViewController {
 
-    
+//    カウントダウン
     @IBOutlet weak var countDownLabel: UILabel!
-    
     var timer = Timer()
     var count = 3
+    var withIdentifier = String()
     
-//    var withIdentifier = String()
-    
-    
+//    画面遷移
+    @IBOutlet weak var label: UILabel!
+    var value = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,10 +49,18 @@ class CountDownViewController: UIViewController {
         countDownLabel.text = String(count)
         if count == 0 {
             sender.invalidate() //止める
-            performSegue(withIdentifier: "toResult", sender: nil)
+            performSegue(withIdentifier: "toResult", sender: value)
         }
         count -= 1
     }
     
+    //次画面に渡す値を次画面のViewControllerの変数に設定??
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toResult" {
+            let toResultVC = segue.destination as! ResultViewController
+            toResultVC.value = sender as! String
+        }
+    }
     
 }
