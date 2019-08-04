@@ -30,4 +30,6 @@ class ResultViewController: UIViewController {
 
     }
     
+    @IBAction func didclickbuttom(_ sender: UIButton) {
+    }
 }
